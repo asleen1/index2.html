@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Table</title>
+	<style>
+		/* Style the table */
+		table {
+			width: 100%;
+			border-collapse: collapse;
+		}
+
+		/* Style the table cells */
+		td, th {
+			border: 1px solid black;
+			padding: 8px;
+			text-align: center;
+		}
+
+		/* Style the header row */
+		th {
+			background-color:#FF69B4;
+		}
+
+		/* Style the alternating rows */
+		tr.altrow {
+			background-color:#FFA07A;
+        }
+           table tr:nth-child(even) {
+        background-color: #ADD8E6; /* Light gray background for even rows */
+      }
+      
+      table tr:nth-child(odd) {
+        background-color: #FFA07A; /* white background for odd rows */
+      }
+		
+	</style>
+</head>
+<body>
+	<table>
+		<!-- First row with merged cells -->
+		<tr>
+			<th colspan="6">STUDENTS MARK SHEET</th>
+		</tr>
+		<!-- Alternating rows -->
+		<tr class="altrow">
+			<td>NAME</td>
+			<td>MATHS</td>
+			<td>SCIENCE</td>
+			<td>ENGLISH</td>
+			<td>PHYSICS</td>
+			<td>GENERAL KNOWLEDGE</td>
+		</tr>
+		<tr>
+			<td>DAVID</td>
+			<td>85</td>
+			<td>87</td>
+			<td>88</td>
+			<td>92</td>
+			<td>88</td>
+		</tr>
+		<tr class="altrow">
+			<td>RICHARD</td>
+			<td>91</td>
+			<td>81</td>
+			<td>78</td>
+			<td>71</td>
+			<td>74</td>
+		</tr>
+		<tr>
+			<td>JOHN</td>
+			<td>81</td>
+			<td>86</td>
+			<td>88</td>
+			<td>84</td>
+			<td>92 </td>
+		</tr>
+		<tr class="altrow">
+			<td>TONY</td>
+			<td>84</td>
+			<td>86</td>
+			<td>87</td>
+			<td>82</td>
+			<td>81</td>
+		</tr>
+		<tr>
+			<td>SCOTT</td>
+			<td>71</td>
+			<td>79</td>
+			<td>82</td>
+			<td>88</td>
+			<td>89</td>
+		</tr>
+	</table>
+</body>
+</html>
